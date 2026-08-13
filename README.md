@@ -47,6 +47,8 @@ Show off your data architecture skills!
 * **Fact Table:** `Fact_Sales`
 * **Relationships:** Enforced `1-to-Many` single-direction relationships to optimise DAX performance and prevent circular dependencies.
 
+For a full breakdown of the DAX measures used in this report, see the [DAX Code Documentation](DAX_DOCUMENTATION.md).
+
 
 ## 📐 Key DAX Measures & Analytics
 * **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users have more control especially on the overview report page so they would be able to see the page by each parameter. 
