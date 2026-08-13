@@ -47,37 +47,11 @@ Show off your data architecture skills!
 * **Fact Table:** `Fact_Sales`
 * **Relationships:** Enforced `1-to-Many` single-direction relationships to optimise DAX performance and prevent circular dependencies.
 
-For a full breakdown of the DAX measures used in this report, see the [DAX Code Documentation](DAX_DOCUMENTATION.md).
-
 
 ## 📐 Key DAX Measures & Analytics
+For a breakdown of key DAX measures used in this report, see the [DAX Code Documentation](DAX_DOCUMENTATION.md).
+
 * **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users have more control especially on the overview report page so they would be able to see the page by each parameter. 
-
-### 1. Same Period Last Year
-Uses the SWITCH() and the SELECTEDVALUE() function to be able to provide last year's value depending on the Parameter Selected
-```
-SPLY = 
-SWITCH(
-    SELECTEDVALUE(Parameter[Parameter Fields]),
-    "'_Measures'[Total Revenue]", [Revenue Last Year],
-    "'_Measures'[Total Profit]", [Profit SPLY],
-    "'_Measures'[Total Orders]", [Orders SPLY], 
-    BLANK()
-)
-```
-
-### 2. Profit YoY Growth %
-Created many time inteligence measures, some with variables for faster performance and better readability. Below is an example of calculating the Profit growth from the same period last year.
-```
-Profit YoY Growth % = 
-VAR YoYprofitvariance = [Total Profit] - [Profit SPLY]
-RETURN
-    DIVIDE(
-        YoYprofitvariance, 
-        [Profit SPLY],
-        0
-)
-```
 
 ## 🔍 Exploratory Data Analysis (EDA)
 Before constructing dashboard visuals, preliminary data exploration was conducted to uncover underlying patterns, distribution anomalies, and operational drivers.
