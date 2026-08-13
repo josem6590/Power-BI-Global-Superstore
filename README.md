@@ -37,7 +37,7 @@ Briefly outline the flow of data from source to report:
 Show off your data architecture skills! 
 
 *(Include an image or diagram of your Model View)*  
-![Data Model Schema](link-to-your-image-of-powerbi-relationships.png)
+![Data Model Schema](schema.png)
 
 * **Model Type:** Star Schema (1 Fact Table, 4 Dimension Tables)
 * **Key Dimensions:** `Dim_Customer`, `Dim_Product`, `Dim_Date`, `Dim_Geography`
