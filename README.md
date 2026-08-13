@@ -52,7 +52,8 @@ Show off your data architecture skills!
 * **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users have more control especially on the overview report page so they would be able to see the page by each parameter. 
 
 ### 1. Same Period Last Year
-``` uses the SWITCH() and the SELECTEDVALUE() function to be able to provide last year's value depending on the Parameter Selected
+Uses the SWITCH() and the SELECTEDVALUE() function to be able to provide last year's value depending on the Parameter Selected
+```
 SPLY = 
 SWITCH(
     SELECTEDVALUE(Parameter[Parameter Fields]),
@@ -60,6 +61,19 @@ SWITCH(
     "'_Measures'[Total Profit]", [Profit SPLY],
     "'_Measures'[Total Orders]", [Orders SPLY], 
     BLANK()
+)
+```
+
+### 2. Profit YoY Growth %
+Created many time inteligence measures, some with variables for faster performance and better readability. Below is an example of calculating the Profit growth from the same period last year.
+```
+Profit YoY Growth % = 
+VAR YoYprofitvariance = [Total Profit] - [Profit SPLY]
+RETURN
+    DIVIDE(
+        YoYprofitvariance, 
+        [Profit SPLY],
+        0
 )
 ```
 
