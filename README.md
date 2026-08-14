@@ -28,8 +28,9 @@ Sales, Revenue, Profit Margin.
 
 ---
 
-## 🛠️ Data Architecture & Pipeline
-Briefly outline the flow of data from source to report:
+## 🛠️ ETL
+For a brief outline of the flow of data and ETL, see the [DataArch](DataArch.md).
+
 
 `[Raw Data Source: CSV flat table]` ➔ `[Power Query Transformation]` ➔ `[Star Schema Data Model]` ➔ `[DAX Analytics]` ➔ `[Power BI Dashboard]`
 
