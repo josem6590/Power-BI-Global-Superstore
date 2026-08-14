@@ -31,27 +31,8 @@ Sales, Revenue, Profit Margin.
 ## 🛠️ ETL
 For a brief outline of the flow of data and ETL, see the [DataArch](DataArch.md).
 
-
-`[Raw Data Source: CSV flat table]` ➔ `[Power Query Transformation]` ➔ `[Star Schema Data Model]` ➔ `[DAX Analytics]` ➔ `[Power BI Dashboard]`
-
-* **Data Sources:** One large CSV file
-* **ETL Processes (Power Query / M):**
-  * As the data was flat and we needed to break it apart in order to create our star schema. I referenced the original source and disabled load in order to create the other tables.
-  * I create my dimension tables; product, customer and geography. Then created my fact table called sales.\
-  * Removed columns that were not needed.
-  * Removed duplicates from the dimension tables.
-  * Merged certain columns to create composite keys to then create relationships. (Due to limitations in the data source, some of those keys have a data type of text, which is not ideal. In the real work, I would create an integer surrogate key upstream or perhaps even in Power Query) 
-  * Removed duplicate transaction.
-  * Upon checking, there were no NULL values.
-  
-
----
-
 ## 📐 Data Modeling (Star Schema)
-Show off your data architecture skills! 
-
-*(Include an image or diagram of your Model View)*  
-![Data Model Schema](Schema.png)
+See data model here [Schema](Schema.png).
 
 * **Model Type:** Star Schema (1 Fact Table, 4 Dimension Tables)
 * **Key Dimensions:** `Dim_Customer`, `Dim_Product`, `Dim_Date`, `Dim_Geography`
@@ -65,7 +46,10 @@ Show off your data architecture skills!
 ## 📐 Key DAX Measures & Analytics
 For a breakdown of key DAX measures used in this report, see the [DAX Code Documentation](DAX_DOCUMENTATION.md).
 
-* **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users have more control especially on the overview report page so they would be able to see the page by each parameter. 
+* **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users have more control especially on the overview report page so they would be able to see the page by each parameter.
+  
+---
+
 
 ## 🔍 Exploratory Data Analysis (EDA)
 Before constructing dashboard visuals, preliminary data exploration was conducted to uncover underlying patterns, distribution anomalies, and operational drivers.
