@@ -1,4 +1,4 @@
-# 📊 POWER BI - GLOBAL SUPERSTORE
+# 📊 GLOBAL SUPERSTORE ANALYSIS
 
 [![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](#)
 
@@ -8,10 +8,23 @@
 
 ---
 
-## 📌 Executive Summary & Business Problem
-* **Business Need:** The sales team requested a report so they could track key performance indicators to make sure they are on track to reach their business goals. They also needed to understand what the key products are by region and be able to highlight any issues or products that are impacting the bottom line.
-* **Objective:** Build an automated Power BI report to track regional KPIs, highlight low-margin products, and identify any risk.
-* **Target Audience:** Regional Sales Managers and Senior VP of Sales.
+## 📌 Background and Overview
+Global Supertore is an online retailer that distributes products across the globe. Specialising - from what I can see in the dataset - office furniture, supplies and technology. With data available from 2011 - 2014 we will endeavour to answer the following questions using Power BI:
+
+* Analysing Sales by Revenue and Orders, and how we are tracking over the years?
+* Looking at sales by month and year, do we see a seasonality pattern?  
+* Which products are top sellers and which are our worst sellers? Do we need to remove/replace items from our inventory?   
+* What products have the lowest and highest profit margin?  
+* What is the distribution of customers by country?  
+* Are we at risk of being too heavily weighted in one country/product?
+
+<!--• Analysing Sales by Revenue and Orders, and how we are tracking over the years?-->
+
+
+**KPI:**
+Sales, Revenue, Profit Margin.  
+**Objective:** Build a Power BI report to track KPIs and answer the above questions.  
+**Target Audience:** Regional Sales Managers and Senior VP of Sales.  
 
 ---
 
