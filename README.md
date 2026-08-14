@@ -4,7 +4,6 @@
 
 
 > **Live Interactive Report:** [Link to embedded Power BI publish-to-web link or demo]  
-> **Documentation / Full Writeup:** [Link to GitHub Pages site if hosted separately]
 
 ---
 
