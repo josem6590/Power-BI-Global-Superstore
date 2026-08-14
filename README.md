@@ -49,6 +49,8 @@ For a breakdown of key DAX measures used in this report, see the [DAX Code Docum
   
 ---
 
+## 🔍 Executive Summary
+Global Superstore achieved a Total Revenue of 12.6M from 25K Orders from 2011 to 2014.
 
 ## 🔍 Exploratory Data Analysis (EDA)
 Before constructing dashboard visuals, preliminary data exploration was conducted to uncover underlying patterns, distribution anomalies, and operational drivers.
