@@ -45,12 +45,20 @@ See data model here [Schema](Schema.png).
 ## 📐 Key DAX Measures & Analytics
 For a breakdown of key DAX measures used in this report, see the [DAX Code Documentation](DAX_DOCUMENTATION.md).
 
-* **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users have more control especially on the overview report page so they would be able to see the page by each parameter.
+* **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users have more control, especially on the overview report page so they would be able to see the page by each parameter.
   
 ---
 
 ## 🔍 Executive Summary
 Global Superstore achieved a Total Revenue of 12.6M from 25K Orders from 2011 to 2014.
+Although the share of revenue between the categories of furniture, office supplies and technology is similar, ranging between 30% - 38%, the number of orders for office supplies is close to double that of furniture and technology and accounts for 53% of all orders made.
+Based on previous years, we are forecasting revenue to reach 5M for 2015, which would be a growth of 16% vsthe  previous year, this would be 10% less than we had grown YoY IN 2014 (26% up from 2013).
+Even though our furniture category revenue accounts for a 30% share of all revenue, the profit from furniture only accounts for 18% of all profit made. When compared to the profit made vs Office supplies and technology its making less than half the profit of Office Supplies and Technology.
+
+## 🔍 Sales Trend
+Global Superstore achieved a Total Revenue of 12.6M from 25K Orders from 2011 to 2014.
+Although the share of revenue between the categories of furniture, office supplies and tec
+ 
 
 ## 🔍 Exploratory Data Analysis (EDA)
 Before constructing dashboard visuals, preliminary data exploration was conducted to uncover underlying patterns, distribution anomalies, and operational drivers.
