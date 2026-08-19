@@ -67,7 +67,7 @@ When looking into our profit, what is concerning is that the money is negative w
 I created a scatter chart to plot the relationship between profit and revenue, and that's when I first noticed the outlier of our table subcategory.
 
 I then created a decomposition tree, and upon investigation, it seems like the negative values are specifically affecting certain regions and only specific products. 
-![DTree](Dtree.png)
+![DTree](DTree.png)
 
 ## 🔍 Exploratory Data Analysis (EDA)
 Before constructing dashboard visuals, preliminary data exploration was conducted to uncover underlying patterns, distribution anomalies, and operational drivers.
