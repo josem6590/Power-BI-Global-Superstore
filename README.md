@@ -60,6 +60,8 @@ Even though our furniture category revenue accounts for a 30% share of all reven
 Revenue, orders and profit all ended the year 24%-26% up verses previous year.  
 Sales trends remain the same yoy, increasing as we progress through the year, with peak months June, September and November. Whilst dips in July and October remain.   
 The United States still remains our number one key market with a 20% market share, followed by Australia who replaces Mexico in second place.  
+
+![Matrix](Matrix.png)
 When looking into our profit, what is concerning is that the money is negative when looking at table sales under the category of furniture. We can see that in 2014 alone are not even covering our costs and have lost 30k. Our pricing and shipping costs need to be looked at in order to bring these products in line with our business objectives.  
  
 
