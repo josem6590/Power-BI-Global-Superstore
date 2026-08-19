@@ -64,6 +64,9 @@ The United States still remains our number one key market with a 20% market shar
 ![Matrix](Matrix.png)
 When looking into our profit, what is concerning is that the money is negative when looking at table sales under the category of furniture. We can see that in 2014 alone are not even covering our costs and have lost 30k. Our pricing and shipping costs need to be looked at in order to bring these products in line with our business objectives.  
 
+I created a scatter chart to plot the relationship between profit and revenue, and that's when I first noticed the outlier of our table subcategory.
+
+I then created a decomposition tree, and upon investigation, it seems like the negative values are specifically affecting certain regions and only specific products. 
 ![PPage](PPage.png)
 
 ## 🔍 Exploratory Data Analysis (EDA)
