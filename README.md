@@ -56,8 +56,10 @@ Based on previous years, we are forecasting revenue to reach 5M for 2015, which 
 Even though our furniture category revenue accounts for a 30% share of all revenue, the profit from furniture only accounts for 18% of all profit made. When compared to the profit made vs Office supplies and technology its making less than half the profit of Office Supplies and Technology.
 
 ## 🔍 Sales Trend
-Global Superstore achieved a Total Revenue of 12.6M from 25K Orders from 2011 to 2014.
-Although the share of revenue between the categories of furniture, office supplies and tec
+Revenue, orders and profit all ended the year 24%-26% up verses previous year.
+Sales trends remain the same yoy, increasing as we progress through the year, with peak months June, September and November. Whilst dips in July and October remain. 
+The United States still remains our number one key market with a 20% market share, followed by Australia who replaces Mexico in second place.
+When looking into our profit, what is concerning is that the money is negative when looking at table sales under the category of furniture. We can see that in 2014 alone are not even covering our costs and have lost 30k. Our pricing and shipping costs need to be looked at in order to bring these products in line with our business objectives.
  
 
 ## 🔍 Exploratory Data Analysis (EDA)
