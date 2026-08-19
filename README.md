@@ -64,13 +64,7 @@ The United States still remains our number one key market with a 20% market shar
 ![Matrix](Matrix.png)
 When looking into our profit, what is concerning is that the money is negative when looking at table sales under the category of furniture. We can see that in 2014 alone are not even covering our costs and have lost 30k. Our pricing and shipping costs need to be looked at in order to bring these products in line with our business objectives.  
 
-![DTree](DTree.png)
-
-[📄 View PPage PDF](PPage.pdf)
-
 ![PPage](PPage.png)
-
-<iframe src="PPage.pdf" width="100%" height="600px"></iframe> 
 
 ## 🔍 Exploratory Data Analysis (EDA)
 Before constructing dashboard visuals, preliminary data exploration was conducted to uncover underlying patterns, distribution anomalies, and operational drivers.
