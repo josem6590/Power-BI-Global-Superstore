@@ -68,6 +68,8 @@ When looking into our profit, what is concerning is that the money is negative w
 
 [📄 View PPage PDF](PPage.pdf)
 
+<iframe src="PPage.pdf" width="100%" height="600px"></iframe> 
+
 ## 🔍 Exploratory Data Analysis (EDA)
 Before constructing dashboard visuals, preliminary data exploration was conducted to uncover underlying patterns, distribution anomalies, and operational drivers.
 
