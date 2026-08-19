@@ -50,16 +50,16 @@ For a breakdown of key DAX measures used in this report, see the [DAX Code Docum
 ---
 
 ## 🔍 Executive Summary
-Global Superstore achieved a Total Revenue of 12.6M from 25K Orders from 2011 to 2014.
-Although the share of revenue between the categories of furniture, office supplies and technology is similar, ranging between 30% - 38%, the number of orders for office supplies is close to double that of furniture and technology and accounts for 53% of all orders made.
-Based on previous years, we are forecasting revenue to reach 5M for 2015, which would be a growth of 16% vsthe  previous year, this would be 10% less than we had grown YoY IN 2014 (26% up from 2013).
-Even though our furniture category revenue accounts for a 30% share of all revenue, the profit from furniture only accounts for 18% of all profit made. When compared to the profit made vs Office supplies and technology its making less than half the profit of Office Supplies and Technology.
+Global Superstore achieved a Total Revenue of 12.6M from 25K Orders from 2011 to 2014.  
+Although the share of revenue between the categories of furniture, office supplies and technology is similar, ranging between 30% - 38%, the number of orders for office supplies is close to double that of furniture and technology and accounts for 53% of all orders made.  
+Based on previous years, we are forecasting revenue to reach 5M for 2015, which would be a growth of 16% vsthe  previous year, this would be 10% less than we had grown YoY IN 2014 (26% up from 2013).  
+Even though our furniture category revenue accounts for a 30% share of all revenue, the profit from furniture only accounts for 18% of all profit made. When compared to the profit made vs Office supplies and technology its making less than half the profit of Office Supplies and Technology.  
 
-## 🔍 Sales Trend
-Revenue, orders and profit all ended the year 24%-26% up verses previous year.
-Sales trends remain the same yoy, increasing as we progress through the year, with peak months June, September and November. Whilst dips in July and October remain. 
-The United States still remains our number one key market with a 20% market share, followed by Australia who replaces Mexico in second place.
-When looking into our profit, what is concerning is that the money is negative when looking at table sales under the category of furniture. We can see that in 2014 alone are not even covering our costs and have lost 30k. Our pricing and shipping costs need to be looked at in order to bring these products in line with our business objectives.
+## 🔍 Insights
+Revenue, orders and profit all ended the year 24%-26% up verses previous year.  
+Sales trends remain the same yoy, increasing as we progress through the year, with peak months June, September and November. Whilst dips in July and October remain.   
+The United States still remains our number one key market with a 20% market share, followed by Australia who replaces Mexico in second place.  
+When looking into our profit, what is concerning is that the money is negative when looking at table sales under the category of furniture. We can see that in 2014 alone are not even covering our costs and have lost 30k. Our pricing and shipping costs need to be looked at in order to bring these products in line with our business objectives.  
  
 
 ## 🔍 Exploratory Data Analysis (EDA)
