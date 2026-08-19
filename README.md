@@ -56,7 +56,7 @@ Based on previous years, we are forecasting revenue to reach 5M for 2015, which 
 Even though our furniture category revenue accounts for a 30% share of all revenue, the profit from furniture only accounts for 18% of all profit made. When compared to the profit made vs Office supplies and technology its making less than half the profit of Office Supplies and Technology.  
 
 ## 🔍 Insights
-[DataArch](DataArch.md)
+[Dashboard](Dashboard.md)
 Revenue, orders and profit all ended the year 24%-26% up verses previous year.  
 Sales trends remain the same yoy, increasing as we progress through the year, with peak months June, September and November. Whilst dips in July and October remain.   
 The United States still remains our number one key market with a 20% market share, followed by Australia who replaces Mexico in second place.  
