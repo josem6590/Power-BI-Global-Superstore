@@ -80,7 +80,9 @@ A detailed table by product and order id that can be shared with the relevant te
 
 ## 🔍 SUMMARY
 
-We need to address these negative loss issues immediately; this is our number one priority. 
+Although we are growing in revenue in our key metrics year over year, we need to address these negative loss issues immediately, as this growth is not a true reflection.   
+If we need to increase our shipping costs or our product pricing, our growth could increase, but there is also a potential that we might reverse.
+
 
 Questions we need to understand 
 We need to understand the naming conventions for the Order ID because that could potentially shed some light on the issues. The Order ID's often begin with what look to be two letter county codes, and they are not the country the item is being shipped to, or are they distribution centres?
@@ -88,11 +90,7 @@ Is there a relationship between the distribution centre location and ship locati
 I did look at the relationship between ship mode and profit loss, but didn't see one. 
 
 
-When looking into our profit, what is concerning is that the money is negative when looking at table sales under the category of furniture. We can see that in 2014 alone are not even covering our costs and have lost 30k. Our pricing and shipping costs need to be looked at in order to bring these products in line with our business objectives.  
 
-I created a scatter chart to plot the relationship between profit and revenue, and that's when I first noticed the outlier of our table subcategory.
-
-I then created a decomposition tree, and upon investigation, it seems like the negative values are specifically affecting certain regions and only specific products. 
 ![DTree](DTree.png)
 
 ## 🔍 Exploratory Data Analysis (EDA)
