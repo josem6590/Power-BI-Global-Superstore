@@ -72,7 +72,6 @@ Profit
 * **Seasonality Trends:** Sales consistently build throughout the year, peaking in **June, September, and November**, with recurring historical dips in July and October.
 * **Top Markets:** The **United States** remains our primary market with a 20% share, followed closely by **Australia**, which recently overtook Mexico for the second spot.
 
-![Matrix](Matrix.png)
 
 ### The Negative Profit Deep-Dive
 Initial analysis of the product matrix revealed that **Table sales are consistently operating at a loss**, failing to break even. 
