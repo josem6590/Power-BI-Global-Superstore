@@ -54,6 +54,8 @@ Profit
   
 ---
 
+# 📊 Global Superstore - Power BI Analytics Project
+
 ## 🔍 Executive Summary
 * **Performance Overview (2011–2014):** Global Superstore achieved **$12.6M** in Total Revenue across **25K** orders. 
 * **Category Breakdown:** Revenue is evenly distributed across Furniture, Office Supplies, and Technology (ranging from 30% to 38% each). However, Office Supplies drives the highest volume, accounting for **53%** of all orders. 
@@ -70,23 +72,9 @@ Profit
 * **Seasonality Trends:** Sales consistently build throughout the year, peaking in **June, September, and November**, with recurring historical dips in July and October.
 * **Top Markets:** The **United States** remains our primary market with a 20% share, followed closely by **Australia**, which recently overtook Mexico for the second spot.
 
-### Country-Specific Analysis Page (Drill-Through)
-
-![CountryD](CountryD.png)
-
-To allow stakeholders to perform targeted regional analysis, I implemented dynamic **Drill-Through navigation** from the main dashboard to a dedicated Country Deep-Dive page. Selecting any country filters the page to display localised operational and financial trends:
-
-* **Geographic Distribution Map:** Visualises Revenue by State/Region, making it easy to spot top-performing sales territories within a single country.
-* **Profit Trend & Anomaly Detection:** A daily Profit line chart equipped with Power BI’s native **Anomaly Detection** algorithm to automatically highlight and explain unexpected margin spikes or drops over time.
-* **Time-Based Operational Matrix:** A granular breakdown indexed by Month and Day of Month, featuring key calculated metrics:
-  * **Order Metrics:** Total Orders, Total Items Ordered, and Average Items per Order (Basket Size).
-  * **Financial Metrics:** Total Revenue, Revenue YoY Growth (%), Total Profit, and Profit Margin (%).
-
+![Matrix](Matrix.png)
 
 ### The Negative Profit Deep-Dive
-
-![ProfitL](ProfitL.png)
-
 Initial analysis of the product matrix revealed that **Table sales are consistently operating at a loss**, failing to break even. 
 
 To investigate further, I plotted order profitability on the Product Analysis page, which revealed a significant volume of transactions yielding negative margins. Notably, this trend of loss-making orders is present across *all* product categories, not just Furniture. 
@@ -97,21 +85,30 @@ To isolate and action this issue, I developed a dedicated **Profit & Loss Report
 * A breakdown of negative order volume grouped by country. 
 * A granular, exportable matrix detailing negative margins by Product and Order ID, designed to assist the commercial team in reassessing pricing strategies.
 
-### 🔍 Logistics & Customer Insights Page
+### Country-Specific Analysis Page (Drill-Through)
+To allow stakeholders to perform targeted regional analysis, I implemented dynamic **Drill-Through navigation** from the main dashboard to a dedicated Country Deep-Dive page. Selecting any country filters the page to display localized operational and financial trends:
+* **Geographic Distribution Map:** Visualizes Revenue by State/Region, making it easy to spot top-performing sales territories within a single country.
+* **Profit Trend & Anomaly Detection:** A daily Profit line chart equipped with Power BI’s native **Anomaly Detection** algorithm to automatically highlight and explain unexpected margin spikes or drops over time.
+* **Time-Based Operational Matrix:** A granular breakdown indexed by Month and Day of Month, featuring key calculated metrics:
+  * **Order Metrics:** Total Orders, Total Items Ordered, and Average Items per Order (Basket Size).
+  * **Financial Metrics:** Total Revenue, Revenue YoY Growth (%), Total Profit, and Profit Margin (%).
 
-![Keyin](KeyIN.png)
+### AI Revenue Drivers & Customer Analytics
 
-To uncover primary revenue drivers and operational behavior, I built an advanced analytics page leveraging Power BI’s native AI capabilities alongside logistics and customer segmentation:
+![Logistics & Customer Insights](KeyIN.jpg)
 
-* **AI Key Influencers Analysis:** Applied machine learning algorithms to evaluate which parameters statistically drive higher transaction values:
-  * **Top Sub-Category Drivers:** **Copiers** increased average revenue by **+$8.67K** above baseline, followed by **Bookcases** (+$5.76K) and **Chairs** (+$4.26K), significantly outperforming the ~$3.3K transaction baseline.
-  * **Category-Level Influence:** Technology and Furniture overall served as the most consistent high-value order triggers.
-* **Fulfillment Strategy (Ship Mode Distribution):**
-  * **Standard Class** heavily dominates revenue generation at **59.95% ($7.6M)**.
-  * **Second Class ($2.6M / 20.29%)** and **First Class ($1.8M / 14.48%)** account for mid-tier logistics volume, while **Same Day ($0.7M / 5.28%)** remains a minor premium option.
-* **Customer Segmentation:**
-  * **Consumer** is the primary customer engine, generating over half of total revenue at **51.48% ($6.5M)**.
-  * **Corporate ($3.8M / 30.25%)** and **Home Office ($2.3M / 18.27%)** comprise the remainder, pointing to clear opportunities for targeted B2B pricing strategies.
+To identify underlying revenue drivers and customer behaviors, I utilized Power BI's native **Key Influencers** and **Top Segments** AI visuals to run automated cluster and regression analysis across transactions:
+
+* **AI Revenue Influencers (Positive vs. Negative Drivers):**
+  * **Top Revenue Boosters:** Transactions involving **Copiers** increase average revenue by **+$8.67K** above baseline, followed by **Bookcases** (+$5.76K) and **Chairs** (+$4.26K).
+  * **Top Revenue Drag:** Placing orders in **Office Supplies** reduces average order value by **-$3.33K**. Sub-categories like **Labels** (-$3.09K), **Paper** (-$3.02K), and **Fasteners** (-$2.77K) pull average order sizes significantly below the global baseline.
+* **Customer Segment Clustering:**
+  * **High-Value Clusters:** Identified **3 premium segments** averaging **$6.6K–$7.4K** per order, with the top segment generating an average of **$7.43K** across 308 orders.
+  * **Low-Value Clusters:** Identified **5 volume-heavy, low-yield segments** averaging under **$1.4K**, with the lowest segment averaging just **$621.60** per order (393 transactions).
+* **Fulfillment & Market Segmentation:**
+  * **Ship Mode:** **Standard Class** dominates revenue volume at **59.95% ($7.6M)**, while express options (**First Class** at 14.48% and **Same Day** at 5.28%) remain underutilized.
+  * **Customer Base:** **Consumer** accounts for **51.48% ($6.5M)** of total revenue, while **Corporate ($3.8M / 30.25%)** and **Home Office ($2.3M / 18.27%)** highlight strong potential for targeted B2B growth.
+
 ---
 
 ## 🔍 Strategic Summary & Next Steps
@@ -121,4 +118,3 @@ While top-line metrics show strong YoY growth, the underlying volume of negative
 ### Outstanding Questions for Further Investigation
 1. **Fulfillment Logistics:** Order IDs often begin with two-letter country codes that do not match the final shipping destination. If these prefixes represent distribution centers, is there a correlation between the distance from the fulfillment center to the customer and the resulting profit loss?
 2. **Shipping Structures:** While initial checks showed no clear relationship between *Ship Mode* (e.g., Standard vs. Express) and profit loss, a deeper dive into the actual freight costs versus what the customer is being charged is necessary.
-
