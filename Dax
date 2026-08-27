@@ -26,3 +26,27 @@ RETURN
         0
 )
 ```
+
+### 3. Negative/Positive Custom Column
+Custome column to flag order items with negative profit
+```
+Negative/Positive Profit % = 
+IF(
+    Fact_Sales[Profit] < 0, 
+    "Negative",
+    "Positive"
+)
+```
+
+### 4. Negative Profit Countries
+Created two DAX measures, one to count the number of countries with Negative orders and another for positive orders
+```
+Country Count Negative = 
+CALCULATE(
+    DISTINCTCOUNT(Dim_Geography[Country]),
+    FILTER(
+        Fact_Sales,
+        Fact_Sales[Profit] < 0
+    )
+)
+```
