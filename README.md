@@ -70,6 +70,16 @@ Profit
 * **Seasonality Trends:** Sales consistently build throughout the year, peaking in **June, September, and November**, with recurring historical dips in July and October.
 * **Top Markets:** The **United States** remains our primary market with a 20% share, followed closely by **Australia**, which recently overtook Mexico for the second spot.
 
+### Country-Specific Analysis Page (Drill-Through)
+
+To allow stakeholders to perform targeted regional analysis, I implemented dynamic **Drill-Through navigation** from the main dashboard to a dedicated Country Deep-Dive page. Selecting any country filters the page to display localised operational and financial trends:
+
+* **Geographic Distribution Map:** Visualises Revenue by State/Region, making it easy to spot top-performing sales territories within a single country.
+* **Profit Trend & Anomaly Detection:** A daily Profit line chart equipped with Power BI’s native **Anomaly Detection** algorithm to automatically highlight and explain unexpected margin spikes or drops over time.
+* **Time-Based Operational Matrix:** A granular breakdown indexed by Month and Day of Month, featuring key calculated metrics:
+  * **Order Metrics:** Total Orders, Total Items Ordered, and Average Items per Order (Basket Size).
+  * **Financial Metrics:** Total Revenue, Revenue YoY Growth (%), Total Profit, and Profit Margin (%).
+
 ![Matrix](Matrix.png)
 
 ### The Negative Profit Deep-Dive
