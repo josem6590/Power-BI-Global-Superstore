@@ -54,8 +54,6 @@ Profit
   
 ---
 
-# 📊 Global Superstore - Power BI Analytics Project
-
 ## 🔍 Executive Summary
 * **Performance Overview (2011–2014):** Global Superstore achieved **$12.6M** in Total Revenue across **25K** orders. 
 * **Category Breakdown:** Revenue is evenly distributed across Furniture, Office Supplies, and Technology (ranging from 30% to 38% each). However, Office Supplies drives the highest volume, accounting for **53%** of all orders. 
