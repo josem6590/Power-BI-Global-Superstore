@@ -82,7 +82,6 @@ To allow stakeholders to perform targeted regional analysis, I implemented dynam
   * **Order Metrics:** Total Orders, Total Items Ordered, and Average Items per Order (Basket Size).
   * **Financial Metrics:** Total Revenue, Revenue YoY Growth (%), Total Profit, and Profit Margin (%).
 
-![Matrix](Matrix.png)
 
 ### The Negative Profit Deep-Dive
 
