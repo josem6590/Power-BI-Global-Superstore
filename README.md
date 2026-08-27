@@ -67,6 +67,27 @@ Even though our furniture category revenue accounts for a 30% share of all reven
 * **Top Markets:** The United States remains our number one key market with a 20% market share, followed by Australia, which replaces Mexico in second place.  
 
 ![Matrix](Matrix.png)
+* **Negative Profit:**
+We can see from the above table that we are losing money and not breaking even on our table sales. This was a concern that needed to be investigated further.
+
+When creating my product analysis page I wanted to see if we had orders with a nagtive profit yield. Therefore, i ploted this on the below graph and was astonished to find we had many orders where we were losing money! The the trend remains the same irrelavant of the category of sold items.
+
+I then create a profit loss report page to show the following:  
+Count of Countries with negative profit.  
+Map View of countries showing share of nagative/positive profit order.   
+Count of Negative orders by Country. 
+A detailed table by product and order id that can be shared with the relevant team to assess the pricing of these products. 
+
+## 🔍 SUMMARY
+
+We need to address these negative loss issues immediately; this is our number one priority. 
+
+Questions we need to understand 
+We need to understand the naming conventions for the Order ID because that could potentially shed some light on the issues. The Order ID's often begin with what look to be two letter county codes, and they are not the country the item is being shipped to, or are they distribution centres?
+Is there a relationship between the distribution centre location and ship location that is nagatively affected the profit? 
+I did look at the relationship between ship mode and profit loss, but didn't see one. 
+
+
 When looking into our profit, what is concerning is that the money is negative when looking at table sales under the category of furniture. We can see that in 2014 alone are not even covering our costs and have lost 30k. Our pricing and shipping costs need to be looked at in order to bring these products in line with our business objectives.  
 
 I created a scatter chart to plot the relationship between profit and revenue, and that's when I first noticed the outlier of our table subcategory.
