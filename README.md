@@ -74,6 +74,9 @@ Profit
 
 
 ### The Negative Profit Deep-Dive
+
+![ProfitL](ProfitL.png)
+
 Initial analysis of the product matrix revealed that **Table sales are consistently operating at a loss**, failing to break even. 
 
 To investigate further, I plotted order profitability on the Product Analysis page, which revealed a significant volume of transactions yielding negative margins. Notably, this trend of loss-making orders is present across *all* product categories, not just Furniture. 
@@ -85,6 +88,9 @@ To isolate and action this issue, I developed a dedicated **Profit & Loss Report
 * A granular, exportable matrix detailing negative margins by Product and Order ID, designed to assist the commercial team in reassessing pricing strategies.
 
 ### Country-Specific Analysis Page (Drill-Through)
+
+![CountryD](Country.png)
+
 To allow stakeholders to perform targeted regional analysis, I implemented dynamic **Drill-Through navigation** from the main dashboard to a dedicated Country Deep-Dive page. Selecting any country filters the page to display localized operational and financial trends:
 * **Geographic Distribution Map:** Visualizes Revenue by State/Region, making it easy to spot top-performing sales territories within a single country.
 * **Profit Trend & Anomaly Detection:** A daily Profit line chart equipped with Power BI’s native **Anomaly Detection** algorithm to automatically highlight and explain unexpected margin spikes or drops over time.
@@ -94,7 +100,7 @@ To allow stakeholders to perform targeted regional analysis, I implemented dynam
 
 ### AI Revenue Drivers & Customer Analytics
 
-![Logistics & Customer Insights](KeyIN.jpg)
+![KeyIN](KeyIN.png)
 
 To identify underlying revenue drivers and customer behaviors, I utilized Power BI's native **Key Influencers** and **Top Segments** AI visuals to run automated cluster and regression analysis across transactions:
 
