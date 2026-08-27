@@ -97,6 +97,21 @@ To isolate and action this issue, I developed a dedicated **Profit & Loss Report
 * A breakdown of negative order volume grouped by country. 
 * A granular, exportable matrix detailing negative margins by Product and Order ID, designed to assist the commercial team in reassessing pricing strategies.
 
+### 🔍 Logistics & Customer Insights Page
+
+![Keyin](KeyIN.png)
+
+To uncover primary revenue drivers and operational behavior, I built an advanced analytics page leveraging Power BI’s native AI capabilities alongside logistics and customer segmentation:
+
+* **AI Key Influencers Analysis:** Applied machine learning algorithms to evaluate which parameters statistically drive higher transaction values:
+  * **Top Sub-Category Drivers:** **Copiers** increased average revenue by **+$8.67K** above baseline, followed by **Bookcases** (+$5.76K) and **Chairs** (+$4.26K), significantly outperforming the ~$3.3K transaction baseline.
+  * **Category-Level Influence:** Technology and Furniture overall served as the most consistent high-value order triggers.
+* **Fulfillment Strategy (Ship Mode Distribution):**
+  * **Standard Class** heavily dominates revenue generation at **59.95% ($7.6M)**.
+  * **Second Class ($2.6M / 20.29%)** and **First Class ($1.8M / 14.48%)** account for mid-tier logistics volume, while **Same Day ($0.7M / 5.28%)** remains a minor premium option.
+* **Customer Segmentation:**
+  * **Consumer** is the primary customer engine, generating over half of total revenue at **51.48% ($6.5M)**.
+  * **Corporate ($3.8M / 30.25%)** and **Home Office ($2.3M / 18.27%)** comprise the remainder, pointing to clear opportunities for targeted B2B pricing strategies.
 ---
 
 ## 🔍 Strategic Summary & Next Steps
