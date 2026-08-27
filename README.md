@@ -55,60 +55,41 @@ Profit
 ---
 
 ## 🔍 Executive Summary
-Global Superstore achieved a Total Revenue of 12.6M from 25K Orders from 2011 to 2014.  
-Although the share of revenue between the categories of furniture, office supplies and technology is similar, ranging between 30% - 38%, the number of orders for office supplies is close to double that of furniture and technology and accounts for 53% of all orders made.  
-Based on previous years, we are forecasting revenue to reach 5M for 2015, which would be a growth of 16% vsthe  previous year, this would be 10% less than we had grown YoY IN 2014 (26% up from 2013).  
-Even though our furniture category revenue accounts for a 30% share of all revenue, the profit from furniture only accounts for 18% of all profit made. When compared to the profit made vs Office supplies and technology its making less than half the profit of Office Supplies and Technology.  
+* **Performance Overview (2011–2014):** Global Superstore achieved **$12.6M** in Total Revenue across **25K** orders. 
+* **Category Breakdown:** Revenue is evenly distributed across Furniture, Office Supplies, and Technology (ranging from 30% to 38% each). However, Office Supplies drives the highest volume, accounting for **53%** of all orders. 
+* **Revenue Forecasting:** Projected revenue for 2015 is **$5M**, representing a **16% YoY growth**. While positive, this indicates a deceleration compared to the 26% YoY growth achieved in 2014.
+* **Profitability Gap:** Despite generating 30% of total revenue, the **Furniture** category accounts for only **18% of total profit**—yielding less than half the profit of both Office Supplies and Technology.
+
+---
 
 ## 🔍 Exploratory Data Analysis (EDA)
+
 ![Dashboard](Dashboard.png)
-* **YoY Growth:** Exploratory Data Analysis (EDA) Revenue, orders and profit all ended the year 24%-26% up verses previous year.  
-* **Monthly Trend:** Sales trends remain the same yoy, increasing as we progress through the year, with peak months June, September and November. Whilst dips in July and October remain.   
-* **Top Markets:** The United States remains our number one key market with a 20% market share, followed by Australia, which replaces Mexico in second place.  
+
+* **YoY Growth:** Revenue, order volume, and profit all closed the year strong, trending **24%–26% up** compared to the previous year.
+* **Seasonality Trends:** Sales consistently build throughout the year, peaking in **June, September, and November**, with recurring historical dips in July and October.
+* **Top Markets:** The **United States** remains our primary market with a 20% share, followed closely by **Australia**, which recently overtook Mexico for the second spot.
 
 ![Matrix](Matrix.png)
-* **Negative Profit:**
-We can see from the above table that we are losing money and not breaking even on our table sales. This was a concern that needed to be investigated further.
 
-When creating my product analysis page I wanted to see if we had orders with a nagtive profit yield. Therefore, i ploted this on the below graph and was astonished to find we had many orders where we were losing money! The the trend remains the same irrelavant of the category of sold items.
+### The Negative Profit Deep-Dive
+Initial analysis of the product matrix revealed that **Table sales are consistently operating at a loss**, failing to break even. 
 
-I then create a profit loss report page to show the following:  
-Count of Countries with negative profit.  
-Map View of countries showing share of nagative/positive profit order.   
-Count of Negative orders by Country. 
-A detailed table by product and order id that can be shared with the relevant team to assess the pricing of these products. 
+To investigate further, I plotted order profitability on the Product Analysis page, which revealed a significant volume of transactions yielding negative margins. Notably, this trend of loss-making orders is present across *all* product categories, not just Furniture. 
 
-## 🔍 SUMMARY
+To isolate and action this issue, I developed a dedicated **Profit & Loss Report** page featuring: 
+* A KPI tracking the count of countries experiencing negative profit. 
+* A geographic map visualizing the ratio of positive vs. negative profit orders by region. 
+* A breakdown of negative order volume grouped by country. 
+* A granular, exportable matrix detailing negative margins by Product and Order ID, designed to assist the commercial team in reassessing pricing strategies.
 
-Although we are growing in revenue in our key metrics year over year, we need to address these negative loss issues immediately, as this growth is not a true reflection.   
-If we need to increase our shipping costs or our product pricing, our growth could increase, but there is also a potential that we might reverse.
+---
 
+## 🔍 Strategic Summary & Next Steps
 
-Questions we need to understand 
-We need to understand the naming conventions for the Order ID because that could potentially shed some light on the issues. The Order ID's often begin with what look to be two letter county codes, and they are not the country the item is being shipped to, or are they distribution centres?
-Is there a relationship between the distribution centre location and ship location that is nagatively affected the profit? 
-I did look at the relationship between ship mode and profit loss, but didn't see one. 
+While top-line metrics show strong YoY growth, the underlying volume of negative-margin orders means this growth is not a true reflection of business health. Addressing these loss-making transactions is critical. While correcting pricing or increasing shipping fees could improve margins, we must also model how those price hikes might impact overall sales volume.
 
-
-
-![DTree](DTree.png)
-
-## 🔍 Exploratory Data Analysis (EDA)
-Before constructing dashboard visuals, preliminary data exploration was conducted to uncover underlying patterns, distribution anomalies, and operational drivers.
-
-### 1. Data Distribution & Outliers
-* **Discount Threshold:** Orders with discounts exceeding **20%** consistently yielded negative profit margins across all categories.
-* **Shipping Lead Times:** High variance was detected in shipping lead times, ranging from **1 day (Same Day)** to **7+ days (Standard Class)**, skewing customer satisfaction metrics in specific regions.
-
-### 2. Key Exploratory Findings
-| Metric / Dimension | Observation | Potential Business Action |
-| :--- | :--- | :--- |
-| **Top Sub-Category** | *Technology (Phones)* and *Furniture (Chairs)* generated the highest gross revenue. | Reallocate marketing budget to maximize stock availability. |
-| **Lowest Margin Region** | *Central US* and *LATAM* displayed negative profit margins despite high sales volume. | Audit localized promotional discounts and shipping overhead. |
-| **Shipping Delay Rate** | 18% of *Standard Class* orders missed their estimated delivery window. | Renegotiate carrier SLAs for high-volume logistics routes. |
-
-### 3. Data Cleansing & Quality Checks Applied
-* **Null Values:** Inferred missing postal code values using City/State dimensions.
-* **Duplicates:** Filtered out duplicate `Order ID` + `Product ID` line items to prevent double-counting revenue.
-* **Outlier Capping:** Verified extreme shipping costs against regional logistics reference tables.
+### Outstanding Questions for Further Investigation
+1. **Fulfillment Logistics:** Order IDs often begin with two-letter country codes that do not match the final shipping destination. If these prefixes represent distribution centers, is there a correlation between the distance from the fulfillment center to the customer and the resulting profit loss?
+2. **Shipping Structures:** While initial checks showed no clear relationship between *Ship Mode* (e.g., Standard vs. Express) and profit loss, a deeper dive into the actual freight costs versus what the customer is being charged is necessary.
 
