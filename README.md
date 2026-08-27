@@ -72,6 +72,8 @@ Profit
 
 ### Country-Specific Analysis Page (Drill-Through)
 
+![CountryD](CountryD.png)
+
 To allow stakeholders to perform targeted regional analysis, I implemented dynamic **Drill-Through navigation** from the main dashboard to a dedicated Country Deep-Dive page. Selecting any country filters the page to display localised operational and financial trends:
 
 * **Geographic Distribution Map:** Visualises Revenue by State/Region, making it easy to spot top-performing sales territories within a single country.
@@ -83,6 +85,9 @@ To allow stakeholders to perform targeted regional analysis, I implemented dynam
 ![Matrix](Matrix.png)
 
 ### The Negative Profit Deep-Dive
+
+![ProfitL](ProfitL.png)
+
 Initial analysis of the product matrix revealed that **Table sales are consistently operating at a loss**, failing to break even. 
 
 To investigate further, I plotted order profitability on the Product Analysis page, which revealed a significant volume of transactions yielding negative margins. Notably, this trend of loss-making orders is present across *all* product categories, not just Furniture. 
