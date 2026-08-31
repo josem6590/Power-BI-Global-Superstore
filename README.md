@@ -77,7 +77,7 @@ Initial analysis of the product matrix revealed that **Table sales are consisten
 To investigate further, I plotted order profitability on the Product Analysis page, which revealed a significant volume of transactions yielding negative margins. Notably, this trend of loss-making orders is present across *all* product categories, not just Furniture. 
 
 To isolate and action this issue, I developed a dedicated **Profit & Loss Report** page featuring: 
-* A KPI tracking the count of countries experiencing negative profit. 
+* A KPI tracking the count of countries experiencing negative profit orders. 
 * A geographic map visualising the ratio of positive vs. negative profit orders by region. 
 * A breakdown of negative order volume grouped by country. 
 * A granular, exportable matrix detailing negative margins by Product and Order ID, designed to assist the commercial team in reassessing pricing strategies.
