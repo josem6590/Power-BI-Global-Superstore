@@ -44,7 +44,7 @@ For a breakdown of key DAX measures used in this report, see the [DAX Code Docum
 
 * **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users to have more control, especially on the overview report page so they would be able to see the page for each parameter.
 
-* **Top 3 Metrics:** 
+* **Top 3 Metrics:**   
 Revenue  
 Orders  
 Profit  
