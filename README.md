@@ -86,7 +86,7 @@ To isolate and action this issue, I developed a dedicated **Profit & Loss Report
 
 ![CountryD](CountryD.png)
 
-To allow stakeholders to perform targeted regional analysis, I implemented dynamic **Drill-Through navigation** from the main dashboard to a dedicated Country Deep-Dive page. Selecting any country filters the page to display localised operational and financial trends:
+To allow stakeholders to perform targeted regional analysis, I implemented dynamic **Drill-Through navigation** from the main dashboard to a dedicated Country Deep-Dive page. Selecting any country filters the page to display localised financial trends:
 * **Geographic Distribution Map:** Visualises Revenue by State/Region, making it easy to spot top-performing sales territories within a single country.
 * **Profit Trend & Anomaly Detection:** A daily Profit line chart equipped with Power BI’s native **Anomaly Detection** algorithm to automatically highlight and explain unexpected margin spikes or drops over time.
 * **Time-Based Operational Matrix:** A granular breakdown indexed by Month and Day of Month, featuring key calculated metrics:
