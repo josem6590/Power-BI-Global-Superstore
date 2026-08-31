@@ -9,7 +9,7 @@
 
 ## 📌 Background & Overview
 
-**Global Superstore** is a global online retailer specializing in office furniture, supplies, and technology products. Using transactional data spanning 2011–2014, this Power BI project provides an end-to-end analysis of sales performance, profitability, customer distribution, and inventory trends.
+**Global Superstore** is a global online retailer specialising in office furniture, supplies, and technology products. Using transactional data spanning 2011–2014, this Power BI project provides an end-to-end analysis of sales performance, profitability, customer distribution, and inventory trends.
 
 ### Core Questions Addressed
 * **Performance Trends:** How are sales revenue and order volumes tracking year-over-year?
@@ -27,7 +27,7 @@
 ## 🛠️ ETL
 For a brief outline of the flow of data and ETL, see the [DataArch](DataArch.md).
 
-## 📐 Data Modeling (Star Schema)
+## 📐 Data Modelling (Star Schema)
 See data model here [Schema](Schema.png).
 
 * **Model Type:** Star Schema (1 Fact Table, 4 Dimension Tables)
@@ -42,7 +42,7 @@ See data model here [Schema](Schema.png).
 ## 📐 Key DAX Measures & Analytics
 For a breakdown of key DAX measures used in this report, see the [DAX Code Documentation](DAX_DOCUMENTATION.md).
 
-* **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users have more control, especially on the overview report page so they would be able to see the page by each parameter.
+* **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users to have more control, especially on the overview report page so they would be able to see the page for each parameter.
 
 * **Top 3 Metrics:** 
 Revenue
@@ -78,7 +78,7 @@ To investigate further, I plotted order profitability on the Product Analysis pa
 
 To isolate and action this issue, I developed a dedicated **Profit & Loss Report** page featuring: 
 * A KPI tracking the count of countries experiencing negative profit. 
-* A geographic map visualizing the ratio of positive vs. negative profit orders by region. 
+* A geographic map visualising the ratio of positive vs. negative profit orders by region. 
 * A breakdown of negative order volume grouped by country. 
 * A granular, exportable matrix detailing negative margins by Product and Order ID, designed to assist the commercial team in reassessing pricing strategies.
 
@@ -86,8 +86,8 @@ To isolate and action this issue, I developed a dedicated **Profit & Loss Report
 
 ![CountryD](CountryD.png)
 
-To allow stakeholders to perform targeted regional analysis, I implemented dynamic **Drill-Through navigation** from the main dashboard to a dedicated Country Deep-Dive page. Selecting any country filters the page to display localized operational and financial trends:
-* **Geographic Distribution Map:** Visualizes Revenue by State/Region, making it easy to spot top-performing sales territories within a single country.
+To allow stakeholders to perform targeted regional analysis, I implemented dynamic **Drill-Through navigation** from the main dashboard to a dedicated Country Deep-Dive page. Selecting any country filters the page to display localised operational and financial trends:
+* **Geographic Distribution Map:** Visualises Revenue by State/Region, making it easy to spot top-performing sales territories within a single country.
 * **Profit Trend & Anomaly Detection:** A daily Profit line chart equipped with Power BI’s native **Anomaly Detection** algorithm to automatically highlight and explain unexpected margin spikes or drops over time.
 * **Time-Based Operational Matrix:** A granular breakdown indexed by Month and Day of Month, featuring key calculated metrics:
   * **Order Metrics:** Total Orders, Total Items Ordered, and Average Items per Order (Basket Size).
@@ -97,7 +97,7 @@ To allow stakeholders to perform targeted regional analysis, I implemented dynam
 
 ![KeyIN](KeyIN.png)
 
-To identify underlying revenue drivers and customer behaviors, I utilized Power BI's native **Key Influencers** and **Top Segments** AI visuals to run automated cluster and regression analysis across transactions:
+To identify underlying revenue drivers and customer behaviours, I utilised Power BI's native **Key Influencers** and **Top Segments** AI visuals to run automated cluster and regression analysis across transactions:
 
 * **AI Revenue Influencers (Positive vs. Negative Drivers):**
   * **Top Revenue Boosters:** Transactions involving **Copiers** increase average revenue by **+$8.67K** above baseline, followed by **Bookcases** (+$5.76K) and **Chairs** (+$4.26K).
@@ -116,5 +116,5 @@ To identify underlying revenue drivers and customer behaviors, I utilized Power 
 While top-line metrics show strong YoY growth, the underlying volume of negative-margin orders means this growth is not a true reflection of business health. Addressing these loss-making transactions is critical. While correcting pricing or increasing shipping fees could improve margins, we must also model how those price hikes might impact overall sales volume.
 
 ### Outstanding Questions for Further Investigation
-1. **Fulfillment Logistics:** Order IDs often begin with two-letter country codes that do not match the final shipping destination. If these prefixes represent distribution centers, is there a correlation between the distance from the fulfillment center to the customer and the resulting profit loss?
+1. **Fulfilment Logistics:** Order IDs often begin with two-letter country codes that do not match the final shipping destination. If these prefixes represent distribution centres, is there a correlation between the distance from the fulfilment centre to the customer and the resulting profit loss?
 2. **Shipping Structures:** While initial checks showed no clear relationship between *Ship Mode* (e.g., Standard vs. Express) and profit loss, a deeper dive into the actual freight costs versus what the customer is being charged is necessary.
