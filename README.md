@@ -30,25 +30,24 @@ For a brief outline of the flow of data and ETL, see the [DataArch](DataArch.md)
 ## 📐 Data Modelling (Star Schema)
 See data model here [Schema](Schema.png).
 
+### Star Schema Architecture
 * **Model Type:** Star Schema (1 Fact Table, 4 Dimension Tables)
-* **Key Dimensions:** `Dim_Customer`, `Dim_Product`, `Dim_Date`, `Dim_Geography`
-  * Dim_Date was created using DAX and marked as the date table.
-  * Location data categories were used for the Dim_geography table and hierarchies created.
-  * Unnecessary columns where hiden from view for report viewers. 
 * **Fact Table:** `Fact_Sales`
-* **Relationships:** Enforced `1-to-Many` single-direction relationships to optimise DAX performance and prevent circular dependencies.
+* **Dimension Tables:** `Dim_Customer`, `Dim_Product`, `Dim_Date`, `Dim_Geography`
+  * `Dim_Date` was generated using DAX and explicitly marked as the Date Table.
+  * Hierarchies and location data categories were configured within `Dim_Geography`.
+  * Technical/intermediate columns were hidden from the user's view to clean up the Fields pane.
+* **Relationships:** Enforced `1-to-Many` single-direction relationships to optimise DAX engine performance and prevent circular dependencies.
 
-
-## 📐 Key DAX Measures & Analytics
-For a breakdown of key DAX measures used in this report, see the [DAX Code Documentation](DAX_DOCUMENTATION.md).
-
-* **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users to have more control, especially on the overview report page so they would be able to see the page for each parameter.
+### Key DAX Measures & Parameters
+* **Field Parameters:** Implemented dynamic parameters for **Total Revenue**, **Total Profit**, and **Total Orders**, allowing users to seamlessly toggle the main dashboard visuals across all three primary metrics.
+* **Documentation:** For the full list of DAX calculated columns and measures, see the [DAX Code Documentation](./DAX_DOCUMENTATION.html).
 
 * **Top 3 Metrics:**   
 Revenue  
 Orders  
-Profit  
-  
+Profit
+
 ---
 
 ## 🔍 Executive Summary
