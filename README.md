@@ -21,13 +21,7 @@
 * **Target Audience:** Regional Sales Managers & Senior VP of Sales
 * **Core KPIs:** Total Sales Revenue, Order Volume, Profit Margin (%)
 * **Objective:** Deliver an interactive Power BI dashboard tracking key performance indicators to drive data-informed sales and inventory decisions.
-
-
-**KPI:**
-Sales, Revenue, Profit Margin.  
-**Objective:** Build a Power BI report to track KPIs and answer the above questions.  
-**Target Audience:** Regional Sales Managers and Senior VP of Sales.  
-
+  
 ---
 
 ## 🛠️ ETL
