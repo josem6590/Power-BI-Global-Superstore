@@ -1,11 +1,9 @@
 ## 🛠️ Data Architecture & Pipeline
 
-* **Data Sources:** One large CSV file
-* **ETL Processes (Power Query / M):**
-  * As the data was flat and we needed to break it apart in order to create our star schema. I referenced the original source and disabled load in order to create the other tables.
-  * I create my dimension tables; product, customer and geography. Then created my fact table called sales.\
-  * Removed columns that were not needed.
-  * Removed duplicates from the dimension tables.
-  * Merged certain columns to create composite keys to then create relationships. (Due to limitations in the data source, some of those keys have a data type of text, which is not ideal. In the real work, I would create an integer surrogate key upstream or perhaps even in Power Query) 
-  * Removed duplicate transaction.
-  * Upon checking, there were no NULL values.
+* **Data Source:** Single flat CSV file containing raw transactional data.
+* **ETL & Data Transformation (Power Query / M):**
+  * **Star Schema Preparation:** Referenced the original source table and disabled its load to break the flat dataset apart into dedicated Fact and Dimension tables.
+  * **Dimension & Fact Creation:** Separated data into `Dim_Customer`, `Dim_Product`, and `Dim_Geography` dimension tables, alongside the central `Fact_Sales` table.
+  * **Data Cleansing:** Removed redundant columns, eliminated duplicate records across dimension tables, and verified zero `NULL` values.
+  * **Composite Keys:** Merged columns to create composite keys for table relationships. 
+    > *Note:* Due to source data limitations, some keys use a `Text` data type. In a production environment, I would generate integer surrogate keys upstream or within Power Query to optimize storage and query performance.
