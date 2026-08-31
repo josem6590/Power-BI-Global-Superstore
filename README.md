@@ -7,17 +7,20 @@
 
 ---
 
-## 📌 Background and Overview
-Global Supertore is an online retailer that distributes products across the globe. Specialising - from what I can see in the dataset - office furniture, supplies and technology. With data available from 2011 - 2014 we will endeavour to answer the following questions using Power BI:
+## 📌 Background & Overview
 
-* Analysing Sales by Revenue and Orders, and how we are tracking over the years?
-* Looking at sales by month and year, do we see a seasonality pattern?  
-* Which products are top sellers and which are our worst sellers? Do we need to remove/replace items from our inventory?   
-* What products have the lowest and highest profit margin?  
-* What is the distribution of customers by country?  
-* Are we at risk of being too heavily weighted in one country/product?
+**Global Superstore** is a global online retailer specializing in office furniture, supplies, and technology products. Using transactional data spanning 2011–2014, this Power BI project provides an end-to-end analysis of sales performance, profitability, customer distribution, and inventory trends.
 
-<!--• Analysing Sales by Revenue and Orders, and how we are tracking over the years?-->
+### Core Questions Addressed
+* **Performance Trends:** How are sales revenue and order volumes tracking year-over-year?
+* **Seasonality:** Do sales patterns reveal distinct monthly or seasonal cycles?
+* **Product Performance:** Which items generate the highest and lowest sales and profit margins? Which products should be considered for removal or replacement?
+* **Customer Distribution & Risk:** How are customers distributed globally, and is the business over-indexed on specific countries or product lines?
+
+### Project Scope
+* **Target Audience:** Regional Sales Managers & Senior VP of Sales
+* **Core KPIs:** Total Sales Revenue, Order Volume, Profit Margin (%)
+* **Objective:** Deliver an interactive Power BI dashboard tracking key performance indicators to drive data-informed sales and inventory decisions.
 
 
 **KPI:**
