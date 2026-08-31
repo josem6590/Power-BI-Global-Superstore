@@ -3,7 +3,7 @@
 [![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](#)
 
 
-> **Live Interactive Report:** [Link to embedded Power BI publish-to-web link or demo]  
+<!-- > **Live Interactive Report:** [Link to embedded Power BI publish-to-web link or demo]  -->
 
 ---
 
