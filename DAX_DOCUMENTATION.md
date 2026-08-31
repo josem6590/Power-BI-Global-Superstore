@@ -1,5 +1,5 @@
 ## 📐 Key DAX Measures & Analytics
-* **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users have more control especially on the overview report page so they would be able to see the page by each parameter. 
+* **Parameters:** Created to hold the following measures; Total Revenue, Total Profit and Total Orders. This enabled report users to have more control, especially on the overview report page, so they would be able to see the page for each parameter. 
 
 ### 1. Same Period Last Year
 Uses the SWITCH() and the SELECTEDVALUE() function to be able to provide last year's value depending on the Parameter Selected
@@ -24,5 +24,28 @@ RETURN
         YoYprofitvariance, 
         [Profit SPLY],
         0
+)
+```
+### 3. Negative/Positive Custom Column
+Custom column to flag order items with negative profit
+```
+Negative/Positive Profit % = 
+IF(
+    Fact_Sales[Profit] < 0, 
+    "Negative",
+    "Positive"
+)
+```
+
+### 4. Negative Profit Countries
+Created two DAX measures, one to count the number of countries with Negative orders and another for positive orders
+```
+Country Count Negative = 
+CALCULATE(
+    DISTINCTCOUNT(Dim_Geography[Country]),
+    FILTER(
+        Fact_Sales,
+        Fact_Sales[Profit] < 0
+    )
 )
 ```
