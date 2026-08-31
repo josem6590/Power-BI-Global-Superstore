@@ -9,7 +9,7 @@
 
 ## 📌 Background & Overview
 
-**Global Superstore** is a global online retailer specialising in office furniture, supplies, and technology products. Using transactional data spanning 2011–2014, this Power BI project provides an end-to-end analysis of sales performance, profitability, customer distribution, and inventory trends.
+**Global Superstore** is a global online retailer specialising in office furniture, supplies and technology products. Using transactional data spanning 2011–2014, this Power BI project provides an end-to-end analysis of sales performance, profitability, customer distribution, and inventory trends.
 
 ### Core Questions Addressed
 * **Performance Trends:** How are sales revenue and order volumes tracking year-over-year?
