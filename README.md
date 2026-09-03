@@ -53,7 +53,7 @@ Profit
 ## 🔍 Executive Summary
 * **Performance Overview (2011–2014):** Global Superstore achieved **$12.6M** in Total Revenue across **25K** orders. 
 * **Category Breakdown:** Revenue is evenly distributed across Furniture, Office Supplies, and Technology (ranging from 30% to 38% each). However, Office Supplies drives the highest volume, accounting for **53%** of all orders. 
-* **Revenue Forecasting:** Projected revenue for 2015 is **$5M**, representing a **16% YoY growth**. While positive, this indicates a deceleration compared to the 26% YoY growth achieved in 2014.
+* **Revenue Forecasting:** Projected revenue for 2015 is **$5.5M**, representing a **28% YoY growth**. This is comparable to growth in 2014 and 2013.
 * **Profitability Gap:** Despite generating 30% of total revenue, the **Furniture** category accounts for only **18% of total profit**—yielding less than half the profit of both Office Supplies and Technology.
 
 ---
