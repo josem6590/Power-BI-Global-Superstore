@@ -60,7 +60,7 @@ Profit
 
 ## 🔍 Exploratory Data Analysis (EDA)
 
-![Dashboard New](Dashboard New.png)
+![Dashboard](Dashboard.png)
 
 * **YoY Growth:** Revenue, order volume, and profit all closed the year strong, trending **24%–26% up** compared to the previous year.
 * **Seasonality Trends:** Sales consistently build throughout the year, peaking in **June, September, and November**, with recurring historical dips in July and October.
