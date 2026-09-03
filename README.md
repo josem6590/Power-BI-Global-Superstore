@@ -83,7 +83,7 @@ To isolate and action this issue, I developed a dedicated **Profit & Loss Report
 
 ### Country-Specific Analysis Page (Drill-Through)
 
-![CountryD](CountryD.png)
+![Anomalies](Anomalies.png)
 
 To allow stakeholders to perform targeted regional analysis, I implemented dynamic **Drill-Through navigation** from the main dashboard to a dedicated Country Deep-Dive page. Selecting any country filters the page to display localised financial trends:
 * **Geographic Distribution Map:** Visualises Revenue by State/Region, making it easy to spot top-performing sales territories within a single country.
